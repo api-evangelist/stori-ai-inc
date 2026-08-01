@@ -1,7 +1,27 @@
 aid: stori-ai-inc
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stori-ai-inc.png
 name: STORI AI Inc.
-description: STORI AI Inc. is a company surfaced as a portfolio company of 500-global and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  STORI AI is a San Francisco-based AI content-marketing platform that helps
+  brands define their identity — archetype, tone, tagline, and colors — and turn
+  that identity into on-brand social posts, graphics, images, videos, and
+  go-to-market marketing materials. The product generates personalized branded
+  content, schedules and publishes it across digital platforms, and offers
+  analytics, content storage, and multi-brand, multi-language, team-collaboration
+  tiers. A Product Hunt Golden Kitty Award recipient, STORI AI is a web SaaS
+  application for marketers and brand teams; it exposes no public developer API,
+  SDKs, or developer portal at this time.
 url: https://raw.githubusercontent.com/api-evangelist/stori-ai-inc/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Artificial Intelligence
+- Content Marketing
+- Social Media
+- Marketing
+- Branding
+- Content Creation
+- SaaS
+- Generative AI
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +51,24 @@ maintainers:
 common:
 - type: Website
   url: https://storiai.com
+- type: Pricing
+  url: https://www.storiai.com/pricing
+- type: Blog
+  url: https://www.storiai.com/blog
+- type: Login
+  url: https://www.storiai.com/login
+- type: Roadmap
+  url: https://www.storiai.com/roadmap
+- type: Support
+  url: https://www.storiai.com/contact
+- type: TermsOfService
+  url: https://www.storiai.com/terms
+- type: PrivacyPolicy
+  url: https://www.storiai.com/privacy
+- type: DomainSecurity
+  url: security/stori-ai-inc-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
