@@ -31,7 +31,7 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-21'
+modified: '2026-08-13'
 tags:
 - Company
 - Artificial Intelligence
@@ -67,8 +67,31 @@ common:
   url: https://www.storiai.com/privacy
 - type: DomainSecurity
   url: security/stori-ai-inc-domain-security.yml
+- type: LLMsTxt
+  url: llms/stori-ai-inc-llms.txt
 x-enrichment:
-  date: '2026-07-21'
+  date: '2026-08-13'
   status: minimal
-  artifacts_added: 1
+  artifacts_added: 2
   pass: local-v1
+x-coverage:
+  state: blocked
+  reason: bot-challenge
+  detail: >-
+    Every HTML route on www.storiai.com — homepage, /pricing, /blog, /roadmap,
+    /docs, /openapi.json, /sitemap.xml — answers HTTP 403 with a Cloudflare
+    "Just a moment..." interstitial, so the product and pricing pages could not
+    be read; only extensionless-bypassing static paths (/robots.txt 200,
+    /llms.txt and every /.well-known/* 404) reached the Next.js origin.
+  evidence:
+  - url: https://www.storiai.com/pricing
+    status: 403
+  - url: https://www.storiai.com/openapi.json
+    status: 403
+  - url: https://www.storiai.com/.well-known/agent-card.json
+    status: 404
+  - url: https://www.storiai.com/llms.txt
+    status: 404
+  - url: https://www.storiai.com/robots.txt
+    status: 200
+  checked: '2026-08-13'
