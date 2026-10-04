@@ -22,7 +22,7 @@ accessModel:
   generated: '2026-07-22'
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/stori-ai-inc.png
-name: STORI AI Inc.
+name: STORI AI
 description: >-
   STORI AI is a San Francisco-based AI content-marketing platform that helps
   brands define their identity — archetype, tone, tagline, and colors — and turn
@@ -47,7 +47,7 @@ tags:
 - Company
 - Artificial Intelligence
 - Content Marketing
-- Social-Media
+- Social Media
 - Marketing
 - Branding
 - Content Creation
@@ -63,6 +63,7 @@ tags_raw:
 - Content Creation
 - SaaS
 - Generative AI
+- Social-Media
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -116,3 +117,4 @@ x-coverage:
   - url: https://www.storiai.com/robots.txt
     status: 200
   checked: '2026-08-13'
+x-legal-name: STORI AI Inc.
